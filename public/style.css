@@ -459,3 +459,20 @@ body{
     background-color: #CA47BD;
     transition: 0.1s;
 }
+
+.noActivity {
+    width: 425px;
+    height: 100px;
+    background-color: white;
+    margin-left: 50px;
+    margin-top: 40px;
+    border-radius: 25px;
+}
+
+.noActivity-text {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 30px;
+    left: 120px;
+}
