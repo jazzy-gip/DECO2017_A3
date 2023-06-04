@@ -248,16 +248,18 @@ body{
     left: 40px;
 
 }
-/*
+
 .runningmode-text {
     font-size: 20px;
     font-weight: bold;
     color: white;
-    margin-top: -90px;
-    margin-left: 200px;
+    position: relative;
+    top: -65px;
+    left: 200px;
+
     
 }
-
+/*(
 #runningmode-dropdown {
     width: 250px;
     height: 60px;
