@@ -88,7 +88,7 @@
     </div>
 
     <div id="Settinggoal-page">
-        <div class ="container2" style="background-color: lightblue;
+        <div class ="container2" style="
         justify-content: space-between;">
         <div class ="main-content">
         <p class = "goal-title">Setting your goal</p> 
@@ -98,6 +98,58 @@
                 <div>
                 <img class="runningmode" src="images/runningman.png">
                 <p class="runningmode-text">Running mode</p>
+                <select id="runningmode-dropdown">
+                    <option value="option1">None</option>
+                    <option value="option2">Long run</option>
+                    <option value="option3">Short run</option>
+                    <option value="option4">Until failure</option>
+                 </select>
+                </div>
+                <div>
+                    <img class="distance-image" src="images/distanceicon.png">
+                    <p class="tDistance-text">Target Distance</p>
+                    <input class="tDistance-input" type="text" placeholder="0">
+                    <span class="unit-text">km</span>
+                </div>
+                <div>
+                    <img class="time-image" src="images/clock.png">
+                    <p class="duration-text">Duration</p>
+                    <input class="time-input" type="text" placeholder="00:00:00">
+                </div>
+                <div>
+                    <img class="speed-image" src="images/speed.png">
+                    <p class="tSpeed-text">Target Speed</p> 
+                    <select id="speed-dropdown">
+                        <option value="option1">0 km/hr</option>
+                        <option value="option2">4 km/hr</option>
+                        <option value="option3">6 km/hr</option>
+                        <option value="option4">8 km/hr</option>
+                        <option value="option5">10 km/hr</option>
+                        <option value="option6">12 km/hr</option>
+                        <option value="option7">14 km/hr</option>
+                        <option value="option8">16 km/hr</option>
+                        <option value="option9">18 km/hr</option>
+                        <option value="option10">20 km/hr</option>
+                        <option value="option11">22 km/hr</option>
+                     </select>
+                </div>
+                <div>
+                    <img class="weather-image" src="images/weather.png">
+                    <p class="weather-text">Weather<br>conditions</p>
+                    <div class="checkbox-grid">
+                        <div class="checkbox-group">
+                            <label><input type="checkbox">Sunny</label>
+                            <label><input type="checkbox">Partly cloudy</label>
+                            <label><input type="checkbox">Overcast</label>
+                            <label><input type="checkbox">Humid</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox">Windy</label>
+                            <label><input type="checkbox">Rainy</label>
+                            <label><input type="checkbox">Chilly</label>
+                            <label><input type="checkbox">Stormy</label>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

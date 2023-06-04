@@ -232,7 +232,7 @@ body{
 .square-box2 {
     flex-grow:1;
     width: 750px;
-    height: 750px;
+    height: 800px;
     margin-top: 30px;
     background-color: #847CF8;
     margin-left: 50px;
@@ -256,10 +256,8 @@ body{
     position: relative;
     top: -65px;
     left: 200px;
-
-    
 }
-/*(
+
 #runningmode-dropdown {
     width: 250px;
     height: 60px;
@@ -269,7 +267,7 @@ body{
     font-family: 'Poppins', sans-serif;
     text-align: center;
     position: relative;
-    top: -65px;
+    top: -130px;
     left: 420px;
     background-size: 20px;
 }
@@ -277,8 +275,8 @@ body{
 .distance-image {
     width: 110px;
     height: 110px;
-    margin-top: -20px;
-    margin-left: 50px;
+    margin-top: -80px;
+    margin-left: 45px;
 }
 
 .tDistance-text {
@@ -313,8 +311,8 @@ body{
 .time-image {
     width: 135px;
     height: 110px;
-    margin-top: -20px;
-    margin-left: 40px;
+    margin-top: -10px;
+    margin-left: 35px;
 }
 
 .duration-text {
@@ -340,8 +338,8 @@ body{
 .speed-image {
     width: 135px;
     height: 120px;
-    margin-top: -25px;
-    margin-left: 40px;
+    margin-top: -20px;
+    margin-left: 35px;
 }
 
 .tSpeed-text {
@@ -368,7 +366,7 @@ body{
 .weather-image {
     width: 135px;
     height: 120px;
-    margin-top: -10px;
+    margin-top: 0px;
     margin-left: 40px;
 }
 
@@ -376,13 +374,13 @@ body{
     font-size: 20px;
     font-weight: bold;
     color: white;
-    margin-top: -100px;
+    margin-top: -90px;
     margin-left: 195px;
 }
 
 /* check boxes */
 
-/* .checkbox-grid {
+.checkbox-grid {
     display: grid;
     grid-template-columns: 20% 20%;
     gap: 0x;
@@ -402,9 +400,8 @@ body{
     margin-bottom: 20px;
 } */
 
-/* .checkbox-grid input[type="checkbox"] {
+.checkbox-grid input[type="checkbox"] {
     transform: scale(1.5);
     margin-left: 5px;
     margin-right: 15px;
 }
- */ 
