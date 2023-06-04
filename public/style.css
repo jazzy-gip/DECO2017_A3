@@ -422,3 +422,40 @@ body{
     text-align: center;
     margin-top: -25px;
 }
+
+.submitGoal-button {
+    width: 250px;
+    height: 50px;
+    background-color: #FA81EE;
+    color: white;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+    top: 40px;
+    left: 300px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submitGoal-button:hover {
+    width: 270px;
+    height: 60px;
+    font-size: 19px;
+    position: relative;
+    top: 30px;
+    left: 290px;
+}
+
+.submitGoal-button:active {
+    width: 270px;
+    height: 60px;
+    font-size: 19px;
+    position: relative;
+    top: 30px;
+    left: 290px;
+    background-color: #CA47BD;
+    transition: 0.1s;
+}
