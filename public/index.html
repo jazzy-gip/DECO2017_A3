@@ -103,38 +103,44 @@
                 <img class="runningMode" src="images/runningman.png">
                 <p class="runningModeText">Running mode</p>
                 <select id="runningModeDropdown">
-                    <option value="option1">None</option>
-                    <option value="option2">Long run</option>
-                    <option value="option3">Short run</option>
-                    <option value="option4">Until failure</option>
+                    <option value="Long run">Long run</option>
+                    <option value="Short run">Short run</option>
+                    <option value="Until failure">Until failure</option>
                  </select>
                 </div>
                 <div>
                     <img class="distanceImage" src="images/distanceicon.png">
                     <p class="tDistanceText">Target Distance</p>
-                    <input class="tDistanceInput" type="text" placeholder="0">
+                    <input id="targetDistanceInput" value="0" type="number" placeholder="0">
                     <span class="unitText">km</span>
                 </div>
                 <div>
                     <img class="timeImage" src="images/clock.png">
                     <p class="durationText">Duration</p>
-                    <input class="timeInput" type="text" placeholder="00:00:00">
+                    <div id="timeInput">
+                    <input id= "hourInput" value= "00" placeholder="00" type='number' min='0' max='23'>
+                    <label for="timeInput">H</label>
+                    <input id= "minuteInput" value= "00" placeholder="00" type='number' min='0' max='59'>
+                    <label for="minuteInput">M</label>
+                    <input id= "secondsInput" value= "00" placeholder="00" type='number' min='0' max='59'>
+                    <label for="secondsInput">S</label>
+                    </div>
                 </div>
                 <div>
                     <img class="speedImage" src="images/speed.png">
                     <p class="tSpeedText">Target Speed</p> 
                     <select id="speedDropdown">
-                        <option value="option1">0 km/hr</option>
-                        <option value="option2">4 km/hr</option>
-                        <option value="option3">6 km/hr</option>
-                        <option value="option4">8 km/hr</option>
-                        <option value="option5">10 km/hr</option>
-                        <option value="option6">12 km/hr</option>
-                        <option value="option7">14 km/hr</option>
-                        <option value="option8">16 km/hr</option>
-                        <option value="option9">18 km/hr</option>
-                        <option value="option10">20 km/hr</option>
-                        <option value="option11">22 km/hr</option>
+                        <option value="0 km/hr">0 km/hr</option>
+                        <option value="4 km/hr">4 km/hr</option>
+                        <option value="6 km/hr">6 km/hr</option>
+                        <option value="8 km/hr">8 km/hr</option>
+                        <option value="10 km/hr">10 km/hr</option>
+                        <option value="12 km/hr">12 km/hr</option>
+                        <option value="14 km/hr">14 km/hr</option>
+                        <option value="16 km/hr">16 km/hr</option>
+                        <option value="18 km/hr">18 km/hr</option>
+                        <option value="20 km/hr">20 km/hr</option>
+                        <option value="22 km/hr">22 km/hr</option>
                      </select>
                 </div>
                 <div>
@@ -142,16 +148,16 @@
                     <p class="weatherText">Weather<br>conditions</p>
                     <div class="checkboxGrid">
                         <div class="checkboxGroup">
-                            <label><input type="checkbox">Sunny</label>
-                            <label><input type="checkbox">Partly cloudy</label>
-                            <label><input type="checkbox">Overcast</label>
-                            <label><input type="checkbox">Humid</label>
+                            <label><input checked value="Sunny" name="weatherSelect" type="radio">Sunny</label>
+                            <label><input value="Partly cloudy" name="weatherSelect" type="radio">Partly cloudy</label>
+                            <label><input value="Overcast" name="weatherSelect" type="radio">Overcast</label>
+                            <label><input value="Humid" name="weatherSelect" type="radio">Humid</label>
                         </div>
                         <div class="checkboxGroup">
-                            <label><input type="checkbox">Windy</label>
-                            <label><input type="checkbox">Rainy</label>
-                            <label><input type="checkbox">Chilly</label>
-                            <label><input type="checkbox">Stormy</label>
+                            <label><input value="Windy" name="weatherSelect" type="radio">Windy</label>
+                            <label><input value="Rainy" name="weatherSelect" type="radio">Rainy</label>
+                            <label><input value="Chilly" name="weatherSelect" type="radio">Chilly</label>
+                            <label><input value="Stormy" name="weatherSelect" type="radio">Stormy</label>
                         </div>
                     </div>
                 </div>
@@ -163,29 +169,28 @@
             <p id="activityText">Check your previous set goals to compare <br>
                 your performance and see your improvements</p>
             <div id="activityBox">
-                <p id="activityBoxText">No activity today</p>
-                
-            </div>
-            <div id="activityBoxInformation">
-                <div id="dateBox">
-                    <p id="dateBoxInformation">XYZ</p>
-                </div>
-                <div id="runningModeAndTimeInfo" style="display: flex; flex-direction: row; justify-content: space-between; position: relative; top: 40px;left: 20px;">
-                    <div style=" width: 150px; font-size: 20px; text-align: left; color:black;">Running mode</div>
-                    <div style=" width: 150px; font-size: 20px; color:black;">Time</div>
-                </div>
-                <div id="speedAndDistanceInfo" style="display: flex; flex-direction: row; justify-content: space-between; position: relative; top: 60px; left: 20px;">
-                    <div style=" width: 150px; font-size: 20px; text-align: left; color:black;">Distance</div>
-                    <div style=" width: 150px; font-size: 20px; color:black;">Speed</div>
-                </div>
-                <div id="weatherInfo">Weather</div>
-                <div id="completedText" style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 120px; margin-left: 20px;">
-                    <div style=" width: 250px; font-size: 30px; text-align: left; color:#847CF8;">COMPLETED</div>
-                    <button id="deleteIcon">
-                        <img id="deleteImageIcon" src=images/bin.png>
-                    </button>
+                <p id="activityBoxText" >No activity today</p>
+                <div id="activityBoxInformation" hidden = true>
+                    <div id="dateBox">
+                        <p id="dateBoxInformation">Todays date</p>
+                    </div>
+                    <div id="runningModeAndTimeInfo" style="display: flex; flex-direction: row; justify-content: space-between; position: relative; top: 40px;left: 20px;">
+                        <div id= "runningModeInfo" style=" width: 150px; font-size: 20px; text-align: left; color:black;">Running mode</div>
+                        <div id= "durationInfo" style=" width: 150px; font-size: 20px; color:black;">Duration</div>
+                    </div>
+                    <div id="speedAndDistanceInfo" style="display: flex; flex-direction: row; justify-content: space-between; position: relative; top: 60px; left: 20px;">
+                        <div id="distanceInfo" style=" width: 150px; font-size: 20px; text-align: left; color:black;">Distance</div>
+                        <div id="speedInfo" style=" width: 150px; font-size: 20px; color:black;">Speed</div>
+                    </div>
+                    <div id="weatherInfo">Weather</div>
+                    <div id="completedText" >
+                        <button id="deleteIcon" style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 120px; margin-left: 20px;">
+                            <img id="deleteImageIcon" src=images/bin.png>
+                        </button>
+                    </div>
                 </div>
             </div>
+            
         </div>
         
     </div>
