@@ -101,8 +101,8 @@
             <div class="squareBox2">
                 <div>
                 <img class="runningMode" src="images/runningman.png">
-                <p class="runningmodeText">Running mode</p>
-                <select id="runningmodeDropdown">
+                <p class="runningModeText">Running mode</p>
+                <select id="runningModeDropdown">
                     <option value="option1">None</option>
                     <option value="option2">Long run</option>
                     <option value="option3">Short run</option>
@@ -158,19 +158,41 @@
             </div>
         </div>
        
-        <div class="sidebar">
-            <p class="todaysActvityText">Today's activity</p>
-            <p class="activityText">Check your previous set goals to compare <br>
+        <div id="sidebar">
+            <p id="todaysActivityText">Today's activity</p>
+            <p id="activityText">Check your previous set goals to compare <br>
                 your performance and see your improvements</p>
-            <div class="noActivity">
-                <p class="noActivityText">No activity today</p></div>
+            <div id="activityBox">
+                <p id="activityBoxText">No activity today</p>
+                
+            </div>
+            <div id="activityBoxInformation">
+                <div id="dateBox">
+                    <p id="dateBoxInformation">XYZ</p>
+                </div>
+                <div id="runningModeAndTimeInfo" style="display: flex; flex-direction: row; justify-content: space-between; position: relative; top: 40px;left: 20px;">
+                    <div style=" width: 150px; font-size: 20px; text-align: left; color:black;">Running mode</div>
+                    <div style=" width: 150px; font-size: 20px; color:black;">Time</div>
+                </div>
+                <div id="speedAndDistanceInfo" style="display: flex; flex-direction: row; justify-content: space-between; position: relative; top: 60px; left: 20px;">
+                    <div style=" width: 150px; font-size: 20px; text-align: left; color:black;">Distance</div>
+                    <div style=" width: 150px; font-size: 20px; color:black;">Speed</div>
+                </div>
+                <div id="weatherInfo">Weather</div>
+                <div id="completedText" style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 120px; margin-left: 20px;">
+                    <div style=" width: 250px; font-size: 30px; text-align: left; color:#847CF8;">COMPLETED</div>
+                    <button id="deleteIcon">
+                        <img id="deleteImageIcon" src=images/bin.png>
+                    </button>
+                </div>
+            </div>
         </div>
         
     </div>
     
     <div>
-        <button class="submitGoalButton">Submit set goal</button>
-        <button class="startGoalButton">Start running!</button>
+        <button id="submitGoalButton">Submit set goal</button>
+        <button id="startGoalButton">Start running!</button>
     </div>
 </section>
     <div id="startRunningPage">
