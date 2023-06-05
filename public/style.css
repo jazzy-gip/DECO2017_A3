@@ -556,3 +556,39 @@ body{
     color: #5BEFC3;
   }
   
+  .finishButton {
+    width: 250px;
+    height: 50px;
+    background-color: #FA81EE;
+    color: white;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+    top: 40px;
+    left: 580px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.finishButton:hover {
+    width: 270px;
+    height: 60px;
+    font-size: 19px;
+    position: relative;
+    top: 30px;
+    left: 570px;
+}
+
+.finishButton:active {
+    width: 270px;
+    height: 60px;
+    font-size: 19px;
+    position: relative;
+    top: 30px;
+    left: 570px;
+    background-color: #CA47BD;
+    transition: 0.1s;
+}
