@@ -15,18 +15,18 @@ body{
     height: 700px;
 }
 
-.container-title {
+.containerTitle {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 30vh;
 }
 
-.container-title p {
+.containerTitle p {
     text-align: center;
 }
 
-.title {
+.landingTitle {
     font-size: 60px;
     text-align: center;
     font-weight: bold;
@@ -42,7 +42,7 @@ body{
     left: 610px;
 }
 
-.landing-text {
+.landingText {
     font-size: 25px;
     color: white;
     text-align: center;
@@ -50,7 +50,7 @@ body{
     top: -80px;
 }
 
-.start-button {
+.startButton {
     width: 250px;
     height: 50px;
     background-color: #F358E4;
@@ -67,7 +67,7 @@ body{
     transition: 0.3s;
 }
 
-.start-button:hover {
+.startButton:hover {
     width: 270px;
     height: 60px;
     font-size: 19px;
@@ -76,7 +76,7 @@ body{
     left: 580px;
 }
 
-.start-button:active {
+.startButton:active {
     width: 270px;
     height: 60px;
     font-size: 19px;
@@ -89,7 +89,7 @@ body{
 
 /* introduction page */
 
-.hello-text {
+.helloText {
     font-size: 30px;
     font-weight: 900;
     color: #756BFF;
@@ -99,7 +99,7 @@ body{
 
 }
 
-.progress-text {
+.progressText {
     font-size: 40px;
     font-weight: 900;
     text-align: center;
@@ -107,7 +107,7 @@ body{
     margin-bottom: -10px;
 }
 
-.month-text {
+.monthText {
     font-size: 25px;
     font-weight: 900;
     text-align: center;
@@ -124,7 +124,7 @@ body{
     top: 912px;
 }
 
-.arrow-2 {
+.arrow2 {
     cursor: pointer;
     transform: scaleX(-1);
     width: 60px;
@@ -141,7 +141,7 @@ body{
     margin-left: 330px;    
 }
 
-.square-box {
+.squareBox {
     width: 1200px;
     height: 420px;
     background-color: #847CF8;
@@ -162,7 +162,7 @@ body{
 
 }
 
-.goal-button {
+.goalButton {
     width: 250px;
     height: 50px;
     background-color: #FA81EE;
@@ -179,7 +179,7 @@ body{
     transition: 0.3s;
 }
 
-.goal-button:hover {
+.goalButton:hover {
     width: 270px;
     height: 60px;
     font-size: 19px;
@@ -188,7 +188,7 @@ body{
     left: 585px;
 }
 
-.goal-button:active {
+.goalButton:active {
     width: 270px;
     height: 60px;
     font-size: 19px;
@@ -206,7 +206,7 @@ body{
     margin-top: 110px;
 }
 
-.goal-title {
+.goalTitle {
     font-size: 30px;
     font-weight: 900;
     color: #847CF8;
@@ -216,7 +216,7 @@ body{
  
 }
 
-.goal-subtext {
+.goalSubtext {
     font-size: 20px;
     color: #756BFF;
     position: relative;
@@ -224,7 +224,7 @@ body{
 
 } 
 
-.square-box2 {
+.squareBox2 {
     flex-grow:1;
     width: 750px;
     height: 850px;
@@ -235,7 +235,7 @@ body{
 
 }
 
-.runningmode {
+.runningMode {
     width: 120px;
     height: 120px;
     position: relative;
@@ -244,7 +244,7 @@ body{
 
 }
 
-.runningmode-text {
+.runningmodeText {
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -253,7 +253,7 @@ body{
     left: 200px;
 }
 
-#runningmode-dropdown {
+#runningmodeDropdown {
     width: 250px;
     height: 60px;
     border: none;
@@ -267,14 +267,14 @@ body{
     background-size: 20px;
 }
 
-.distance-image {
+.distanceImage {
     width: 110px;
     height: 110px;
     margin-top: -80px;
     margin-left: 45px;
 }
 
-.tDistance-text {
+.tDistanceText {
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -282,7 +282,7 @@ body{
     margin-left: 200px;
 }
 
-.tDistance-input {
+.tDistanceInput {
     width: 190px;
     height: 60px;    
     border: none;
@@ -295,7 +295,7 @@ body{
 
 }
 
-.unit-text {
+.unitText {
     color: white;
     font-size: 20px;
     position: relative;
@@ -303,14 +303,14 @@ body{
     left: 440px;
 }
 
-.time-image {
+.timeImage {
     width: 135px;
     height: 110px;
     margin-top: -10px;
     margin-left: 35px;
 }
 
-.duration-text {
+.durationText {
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -318,7 +318,7 @@ body{
     margin-left: 200px;
 }
 
-.time-input {
+.timeInput {
     width: 250px;
     height: 60px;    
     border: none;
@@ -330,14 +330,14 @@ body{
     left: 420px;
 }
 
-.speed-image {
+.speedImage {
     width: 135px;
     height: 120px;
     margin-top: -20px;
     margin-left: 35px;
 }
 
-.tSpeed-text {
+.tSpeedText {
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -345,7 +345,7 @@ body{
     margin-left: 195px;
 }
 
-#speed-dropdown {
+#speedDropdown {
     width: 250px;
     height: 60px;
     border: none;
@@ -358,14 +358,14 @@ body{
     left: 420px;
 }
 
-.weather-image {
+.weatherImage {
     width: 135px;
     height: 120px;
     margin-top: 0px;
     margin-left: 40px;
 }
 
-.weather-text {
+.weatherText {
     font-size: 20px;
     font-weight: bold;
     color: white;
@@ -375,13 +375,13 @@ body{
 
 /* check boxes */
 
-.checkbox-grid {
+.checkboxGrid {
     display: grid;
     grid-template-columns: 20% 20%;
     gap: 0x;
 }
 
-.checkbox-group {
+.checkboxGroup {
     display: flex;
     flex-direction: column;
     font-size: 18px;
@@ -391,11 +391,11 @@ body{
     color: white;
 }
 
-.checkbox-group label {
+.checkboxGroup label {
     margin-bottom: 20px;
 } */
 
-.checkbox-grid input[type="checkbox"] {
+.checkboxGrid input[type="checkbox"] {
     transform: scale(1.5);
     margin-left: 5px;
     margin-right: 15px;
@@ -409,21 +409,21 @@ body{
 
 }
 
-.todaysActvity-text {
+.todaysActvityText {
     color: white;
     font-size: 30px;
     text-align: center;
     margin-top: 55px;
 }
 
-.activity-text {
+.activityText {
     color: white;
     font-size: 20px;
     text-align: center;
     margin-top: -25px;
 }
 
-.submitGoal-button {
+.submitGoalButton {
     width: 250px;
     height: 50px;
     background-color: #FA81EE;
@@ -440,7 +440,7 @@ body{
     transition: 0.3s;
 }
 
-.submitGoal-button:hover {
+.submitGoalButton:hover {
     width: 270px;
     height: 60px;
     font-size: 19px;
@@ -449,7 +449,7 @@ body{
     left: 290px;
 }
 
-.submitGoal-button:active {
+.submitGoalButton:active {
     width: 270px;
     height: 60px;
     font-size: 19px;
@@ -469,10 +469,51 @@ body{
     border-radius: 25px;
 }
 
-.noActivity-text {
+.noActivityText {
     font-size: 20px;
     font-weight: bold;
     position: relative;
     top: 30px;
     left: 120px;
+}
+
+/* Start running page */
+
+.startRunningTitle {
+    font-size: 40px;
+    font-weight: bold;
+    color: #847CF8;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.targetCircle {
+    width: 300px;
+    height: 300px;
+    background-color: transparent;    
+    border-radius: 50%;
+    border: 27px solid white;
+    position: relative;
+    top: -95px;
+    left: 420px;
+}
+
+.runningTips {
+    margin-top: 30px;
+}
+
+.windImage {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    left: 50px;
+    top: 20px;
+}
+
+.runningTipsText {
+    font-size: 20px;
+    position: relative;
+    right: 70px;
+    top: -10px;
+
 }
