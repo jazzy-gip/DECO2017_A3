@@ -460,6 +460,43 @@ body{
     transition: 0.1s;
 }
 
+.startGoalButton {
+    width: 250px;
+    height: 50px;
+    background-color: #FA81EE;
+    color: white;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+    top: 40px;
+    left: 760px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.startGoalButton:hover {
+    width: 270px;
+    height: 60px;
+    font-size: 19px;
+    position: relative;
+    top: 30px;
+    left: 760px;
+}
+
+.startGoalButton:active {
+    width: 270px;
+    height: 60px;
+    font-size: 19px;
+    position: relative;
+    top: 30px;
+    left: 760px;
+    background-color: #CA47BD;
+    transition: 0.1s;
+}
+
 .noActivity {
     width: 425px;
     height: 100px;
