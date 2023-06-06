@@ -1,6 +1,6 @@
  //boolean, checks if user has set goals and submitted them
  var sidebarPopulated = false;
- //Tips that show up for each selected weather, future expansion to include multiple for each weather type
+ //Tips that show up for each selected weather, future expansion to include multiple for each weather type. Key value is weather type
  const weatherTips = new Map();
  weatherTips.set('Sunny','Drink plenty of water before, during, and after your run to prevent dehydration and apply a high SPF broad-spectrum sunscreen to exposed areas of skin. ');
  weatherTips.set('Partly cloudy','Dress yourself in lightweight, breathable layers of clothing that you can easily adjust and take off if necessary as the weather changes. ');
@@ -13,14 +13,14 @@
   
   //activity box info for the sidebar on the right
   const activityBoxInformation = document.getElementById('activityBoxInformation');
-  //
+
   //getStartedButton element with its respective onclick event handler
   const getStartedButton = document.getElementById('getStarted');
   getStartedButton.addEventListener("click", function(event){
     //Scroll to intro page section
     scrollToSection(document.getElementById('introPageSection'));
   });
-
+  //delete activity button event handler
   const deleteIcon = document.getElementById('deleteIcon');
   deleteIcon.addEventListener("click", function(event){
     //reset input fields
@@ -32,32 +32,33 @@
     document.getElementById('activityBoxText').hidden = false;
   });
 
-  //
+  //submit goal button event handler
   const submitGoalButton = document.getElementById('submitGoalButton');
   submitGoalButton.addEventListener("click", function(event){
-    //Submit data in input fields to generate sidebar activity box
-    //get input from setting goal page section input fields and use to populate activity box
+    //set boolean to true to indicate that user has inputted data
     sidebarPopulated = true;
+    //show activity box information on sidebar
     activityBoxInformation.hidden = false;
     document.getElementById('activityBoxText').hidden = true;
-
+    //get todays date formatted by getDateString function call, place it into date box
     document.getElementById('dateBoxInformation').innerHTML = getDateString();
+    //populate running info based on user input
     document.getElementById('runningModeInfo').innerHTML = document.getElementById('runningModeDropdown').value;
-
+    //poopulate duration info based on user input
     const durationInfo = document.getElementById('durationInfo');
     var durationString = formatTime(document.getElementById('hourInput').value) + ":" + formatTime(document.getElementById('minuteInput').value) + ":";
     durationString = durationString + formatTime(document.getElementById('secondsInput').value);
     durationInfo.innerHTML = durationString;
-
+    //populate distance info based on user input
     document.getElementById('distanceInfo').innerHTML = document.getElementById('targetDistanceInput').value +"km";
-
+    //populate speed info based on user input
     document.getElementById('speedInfo').innerHTML = document.getElementById('speedDropdown').value;
-
+    //populate weather info based on user input
     document.getElementById('weatherInfo').innerHTML = document.querySelector('input[name="weatherSelect"]:checked').value;
   })
 
-  //Timer element//
-  var timerElement = document.getElementById("timer");
+  //Global variables to be used for the timer
+  const timerElement = document.getElementById("timer");
   var seconds = 0;
   var minutes = 0;
   var hours = 0;
@@ -70,10 +71,13 @@
     intervalId = setInterval(updateTimer, 1000);
     document.getElementById("startRunningButton").disabled = true;
   }
+
+  //returns true if timer reaches user inputted duration
   function checkTimerCompletion(){
     if (document.getElementById('hourInput').value == hours){
         if (document.getElementById('minuteInput').value == minutes){
             if (document.getElementById('secondsInput').value == seconds){
+                //Return true if hours, minutes, seconds from timer ALL match with user selected duration
                 return true;
             }
         }
@@ -82,9 +86,11 @@
   }
   function updateTimer() {
     seconds++;
+    //converts 60 seconds into +1 minute
     if (seconds >= 60) {
       seconds = 0;
       minutes++;
+      //converts 60 minutes into +1 hour
       if (minutes >= 60) {
         minutes = 0;
         hours++;
@@ -118,20 +124,18 @@
   const finishButtonEnd = document.getElementById('finishButton');
   finishButtonEnd.addEventListener("click", function(event){
     scrollToSection(document.getElementById('introPageSection'));
-
     //populate today's summary
-
     const durationInfo = document.getElementById('completedDuration');
     var durationString = formatTime(document.getElementById('hourInput').value) + ":" + formatTime(document.getElementById('minuteInput').value) + ":";
     durationString = durationString + formatTime(document.getElementById('secondsInput').value);
     durationInfo.innerHTML = durationString;
 
     document.getElementById('completedDistance').innerHTML = document.getElementById('targetDistanceInput').value +"km";
-
     document.getElementById('completedSpeed').innerHTML = document.getElementById('speedDropdown').value;
     document.getElementById('completionTitle').hidden = false;
   })
 
+  //event handler for start running button, starts the application for user
   const startRunningButton = document.getElementById('startRunningButton');
   startRunningButton.addEventListener("click", function(event){
     //only run code if sidebar is populated from user input
@@ -155,7 +159,7 @@
     }
     
   })
-  
+  //event handler for set running goal button
   const setRunningGoalButton = document.getElementById('setRunningGoal');
   setRunningGoalButton.addEventListener("click", function(event){
     scrollToSection(document.getElementById('settingGoalPageSection'));
@@ -165,12 +169,12 @@
   function scrollToSection(section) {
     section.scrollIntoView({ behavior: 'smooth' });
   }
-  //return string representation of current date and time
-  function getDateString(){
-    const today = new Date();
-    return today.toLocaleDateString("en-US", {  
-        weekday: "long", year: "numeric", month: "short",  
-        day: "numeric", hour: "2-digit", minute: "2-digit"  
-    })
-  }
+//return string representation of current date and time
+function getDateString(){
+const today = new Date();
+return today.toLocaleDateString("en-US", {  
+    weekday: "long", year: "numeric", month: "short",  
+    day: "numeric", hour: "2-digit", minute: "2-digit"  
+})
+}
 
