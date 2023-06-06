@@ -33,10 +33,7 @@
         <img id="introPageCalendar" src="images/calendar.png">
 
         <div class="trackerBoxContainer">
-            <div style="
-            margin-top: 30px;
-            display: flex;
-            flex-direction: row;
+            <div style="margin-top: 30px;display: flex;flex-direction: row;
             justify-content: space-between;
             position: relative;
             top: 150px;"><div style="
@@ -195,92 +192,27 @@
         <p id="startRunningTitle">Start Running!</p>
         <div id="timer">00:00:00</div>
          <div class="trackerBoxContainer">
-            <div style="
-                margin-top: 50px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                position: relative;
-                top: 150px;">
-                <div style="
-                width: 300px;
-                font-size: 30px;
-                text-align: right;
-                color: white;" >
-                Duration</div>
-                <div style="
-                width: 300px;
-                font-size: 30px;
-                text-align: center;
-                color: white;
-                ">Target <br>Distance</div>
-                <div style="
-                width: 300px;
-                font-size: 30px;
-                text-align: left;
-                color: white;
-                ">Speed </div>
-                </div> 
-                <div style="
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                position: relative;
-                top: 160px;">
-                <div style="
-                width: 300px;
-                font-size: 30px;
-                text-align: right;
-                color: white;" >
-                00:00:00</div>
-                <div style="
-                width: 300px;
-                font-size: 30px;
-                text-align: center;
-                color: white;
-                ">0 km</div>
-                <div style="
-                width: 300px;
-                font-size: 30px;
-                text-align: left;
-                color: white;
-                ">0 km/hr</div>
+            <div style=" margin-top: 50px; display: flex; flex-direction: row; justify-content: space-between; position: relative; top: 150px;">
+                <div style="width: 300px;font-size: 30px;text-align: right;color: white;" >Duration</div>
+                <div style="width: 300px;font-size: 30px;text-align: center;color: white;">Target <br>Distance</div>
+                <div style="width: 300px;font-size: 30px;text-align: left;color: white;">Speed </div></div> 
+                <div style="display: flex;flex-direction: row;justify-content: space-between;position: relative;top: 160px;">
+                <div style="width: 300px;font-size: 30px;text-align: right;color: white;">00:00:00</div>
+                <div style="width: 300px;font-size: 30px;text-align: center;color: white;">0 km</div>
+                <div style="width: 300px;font-size: 30px;text-align: left;color: white;">0 km/hr</div>
             </div>
                 <div class="targetDistanceCircle2"></div>
          </div>
-            <div id="weatherAndThoughtsBoxes" style="
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                margin-top: 35px;">
-               <div style="
-                    width: 550px;
-                    height: 350px;
-                    background-color: #847CF8;
-                    font-size: 30px;
-                    text-align: center;
-                    position: relative;
-                    left: 120px;
-                    border-radius: 30px;
-                    color: white;" > 
+            <div id="weatherAndThoughtsBoxes" style="display: flex;flex-direction: row;justify-content: space-between;margin-top: 35px;">
+               <div style="width: 550px;height: 350px;background-color: #847CF8;font-size: 30px;text-align: center;position: relative;left: 120px;border-radius: 30px;color: white;" > 
                     <p id="runningTipsTitle">Running tips for today</p>
-                    <div id="runningTipsTextContainer" style ="display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;">
+                    <div id="runningTipsTextContainer" style ="display: flex;flex-direction: row;justify-content: space-between;">
                         <img id="windImage" src="images/wind.png">
                         <p id="runningTipsDescription">Maintain a strong running <br>form of a straight back and<br>
                          avoid hunching or leaning <br>forward against strong winds<br> whilst running</p>
                     </div>
                 </div>
-                <div style="
-                    width: 550px;
-                    background-color: #847CF8;
-                    font-size: 30px;
-                    text-align: center;
-                    position: relative;
-                    right: 120px;
-                    border-radius: 30px;
-                    color: white;">
+                <div style="width: 550px;background-color: #847CF8;font-size: 30px;text-align: center;position: relative;right: 120px;border-radius: 30px;color: white;">
                     <p id="userFeedbackTitle">Any thoughts?</p>
                     <textarea id="userFeedbackBox" rows="4" cols="50" placeholder="Type here..."></textarea>
                     <div id="feedbackRating">
@@ -298,7 +230,7 @@
                 </div>
             </div>
             <div>
-                <button class="finishButton">Finish</button>
+                <button id="finishButton" class="finishButtonLayout">Finish</button>
             </div>
     </div>
 </section>

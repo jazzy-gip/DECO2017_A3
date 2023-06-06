@@ -52,6 +52,7 @@
   var intervalId;
 
   function startTimer() {
+    clearInterval(intervalId);
     intervalId = setInterval(updateTimer, 1000);
     document.getElementById("startGoalButton").disabled = true;
   }
@@ -75,6 +76,11 @@
   }
 
   //Scrolling buttons
+  const finishButtonEnd = document.getElementById('finishButton');
+  finishButtonEnd.addEventListener("click", function(event){
+    scrollToSection(document.getElementById('introPageSection'))
+  })
+
   const startRunningButton = document.getElementById('startRunning');
   startRunningButton.addEventListener("click", function(event){
     scrollToSection(document.getElementById('startRunningPageSection'))

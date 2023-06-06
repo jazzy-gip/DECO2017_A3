@@ -662,7 +662,7 @@ body{
     color: #5BEFC3;
   }
 
-.finishButton {
+.finishButtonLayout {
     width: 250px;
     height: 50px;
     background-color: #FA81EE;
@@ -679,7 +679,7 @@ body{
     transition: 0.3s;
 }
 
-.finishButton:hover {
+.finishButtonLayout:hover {
     width: 270px;
     height: 60px;
     font-size: 19px;
@@ -688,7 +688,7 @@ body{
     left: 570px;
 }
 
-.finishButton:active {
+.finishButtonLayout:active {
     width: 270px;
     height: 60px;
     font-size: 19px;
