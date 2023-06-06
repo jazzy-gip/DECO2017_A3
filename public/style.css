@@ -321,14 +321,21 @@ body{
 #timeInput {
     width: 250px;
     height: 60px;    
-    border: none;
+    position: relative;
+    top: -55px;
+    left: 420px;
+    color: white;
+}
+
+#hourInput, #minuteInput, #secondsInput {
     border-radius: 40px;
     font-size: 20px;
+    border: none;
+    height: 40px;
+    width: 60px;
     text-align: center;
-    position: relative;
-    top: -65px;
-    left: 420px;
 }
+
 
 #targetSpeedImage {
     width: 135px;
@@ -623,29 +630,29 @@ body{
     margin-top: -10px;
 }
 
-#rating {
+#feedbackRating {
     display: inline-block;
     direction: rtl;
   }
   
-#rating input {
+#feedbackRating input {
     display: none;
   }
   
-#rating label {
+#feedbackRating label {
     font-size: 30px;
     color: white;
     cursor: pointer;
   }
   
-#rating label:before {
+#feedbackRating label:before {
     content: "\2605";
   }
   
-#rating input:checked ~ label {
+#feedbackRating input:checked ~ label {
     color: #5BEFC3;
   }
-  
+
 .finishButton {
     width: 250px;
     height: 50px;
