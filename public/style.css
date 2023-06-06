@@ -149,17 +149,28 @@ body{
     margin-top: 20px;
     border-radius: 40px;
 }
-
-.trackerDistanceCircle {
+.circle{
     width: 300px;
     height: 300px;
     background-color: transparent;    
     border-radius: 50%;
-    border: 27px solid white;
     position: relative;
-    top: -60px;
     left: 420px;
-
+}
+.whiteBorder {
+    border: 27px solid white;
+}
+.greenBorder {
+    border: 27px solid rgb(131, 228, 176);
+}
+.greenFont{
+    color: #5BEFC3;
+}
+#trackerCircle {
+    top: -60px;
+}
+#targetDistanceCircle {
+    top: -95px;
 }
 
 .goalButton {
@@ -521,7 +532,7 @@ body{
     transition: 0.1s;
 }
 
-#startRunning {
+#startRunningButton {
     width: 250px;
     height: 50px;
     background-color: #FA81EE;
@@ -538,7 +549,7 @@ body{
     transition: 0.3s;
 }
 
-#startRunning:hover {
+#startRunningButton:hover {
     width: 270px;
     height: 60px;
     font-size: 19px;
@@ -547,7 +558,7 @@ body{
     left: 760px;
 }
 
-#startRunning:active {
+#startRunningButton:active {
     width: 270px;
     height: 60px;
     font-size: 19px;
@@ -580,9 +591,11 @@ body{
 #startRunningTitle {
     font-size: 40px;
     font-weight: bold;
-    color: #847CF8;
     text-align: center;
     margin-top: 200px;
+}
+.purpleFont{
+    color: #847CF8;
 }
 
 #timer {
@@ -591,17 +604,6 @@ body{
     color: #847CF8;
     text-align: center;
 
-}
-
-.targetDistanceCircle2 {
-    width: 300px;
-    height: 300px;
-    background-color: transparent;    
-    border-radius: 50%;
-    border: 27px solid white;
-    position: relative;
-    top: -95px;
-    left: 420px;
 }
 
 #runningTipsTitle {

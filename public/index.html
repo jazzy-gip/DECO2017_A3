@@ -73,7 +73,7 @@
             text-align: left;
             color: white;
             ">0 km/hr</div></div>
-            <div class="trackerDistanceCircle"></div>
+            <div class="circle whiteBorder" id="trackerCircle" ></div>
         </div>
         <button id="setRunningGoal" class="goalButton"> + Set a running goal</button>
     </div>
@@ -183,13 +183,13 @@
     </div>
         <div>
             <button id="submitGoalButton">Submit set goal</button>
-            <button id="startRunning" onclick="startTimer()">Start running!</button>
+            <button id="startRunningButton" >Start running!</button>
         </div>
 </section>
 
 <section id="startRunningPageSection">
     <div id="startRunningPage">
-        <p id="startRunningTitle">Start Running!</p>
+        <p id="startRunningTitle" class="purpleFont">Start Running!</p>
         <div id="timer">00:00:00</div>
          <div class="trackerBoxContainer">
             <div style=" margin-top: 50px; display: flex; flex-direction: row; justify-content: space-between; position: relative; top: 150px;">
@@ -197,11 +197,11 @@
                 <div style="width: 300px;font-size: 30px;text-align: center;color: white;">Target <br>Distance</div>
                 <div style="width: 300px;font-size: 30px;text-align: left;color: white;">Speed </div></div> 
                 <div style="display: flex;flex-direction: row;justify-content: space-between;position: relative;top: 160px;">
-                <div style="width: 300px;font-size: 30px;text-align: right;color: white;">00:00:00</div>
-                <div style="width: 300px;font-size: 30px;text-align: center;color: white;">0 km</div>
-                <div style="width: 300px;font-size: 30px;text-align: left;color: white;">0 km/hr</div>
+                <div id="targetDuration" style="width: 300px;font-size: 30px;text-align: right;color: white;">00:00:00</div>
+                <div id="targetDistance" style="width: 300px;font-size: 30px;text-align: center;color: white;">0 km</div>
+                <div id="targetSpeed" style="width: 300px;font-size: 30px;text-align: left;color: white;">0 km/hr</div>
             </div>
-                <div class="targetDistanceCircle2"></div>
+                <div class="circle whiteBorder" id="targetDistanceCircle"></div>
          </div>
             <div id="weatherAndThoughtsBoxes" style="display: flex;flex-direction: row;justify-content: space-between;margin-top: 35px;">
                <div style="width: 550px;height: 350px;background-color: #847CF8;font-size: 30px;text-align: center;position: relative;left: 120px;border-radius: 30px;color: white;" > 
