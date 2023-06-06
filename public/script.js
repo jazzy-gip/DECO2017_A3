@@ -71,6 +71,11 @@
   function formatTime(time) {
     return time < 10 ? "0" + time : time;
   }
+
+  const startRunningButton = document.getElementById('startRunning');
+  startRunningButton.addEventListener("click", function(event){
+    scrollToSection(document.getElementById('startRunningPageSection'))
+  })
   
   const setRunningGoalButton = document.getElementById('setRunningGoal');
   setRunningGoalButton.addEventListener("click", function(event){

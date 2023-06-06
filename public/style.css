@@ -521,7 +521,7 @@ body{
     transition: 0.1s;
 }
 
-#startGoalButton {
+#startRunning {
     width: 250px;
     height: 50px;
     background-color: #FA81EE;
