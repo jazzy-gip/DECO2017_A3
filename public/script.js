@@ -1,5 +1,15 @@
  //boolean, checks if user has set goals and submitted them
  var sidebarPopulated = false;
+ //Tips that show up for each selected weather, future expansion to include multiple for each weather type
+ const weatherTips = new Map();
+ weatherTips.set('Sunny','Drink plenty of water before, during, and after your run to prevent dehydration and apply a high SPF broad-spectrum sunscreen to exposed areas of skin. ');
+ weatherTips.set('Partly cloudy','Dress yourself in lightweight, breathable layers of clothing that you can easily adjust and take off if necessary as the weather changes. ');
+ weatherTips.set('Overcast','These weather conditions can sometimes be unpredictable as potential rain storms and showers may occur. Be alert and stay prepared to seek shelter when the weather changes.');
+ weatherTips.set('Humid','Avoid drinking caffeine before your run as this can cause the increase your heart rate and body heat temperature. Stay hydrated with water!');
+ weatherTips.set('Windy','Maintain a strong running form of a straight back and avoid hunching or leaning forward against strong winds whilst running.');
+ weatherTips.set('Rainy','Ensure your running shoes have a good quality grip as you may encounter slippery surfaces that could cause falling injuries. ');
+ weatherTips.set('Chilly','Cold weather can impact your breathing during your run and could potentially make your muscles stiffer, please be cautious and adjust your pace accordingly. ');
+ weatherTips.set('Stormy','If a storm suddenly approaches, it’s advisable to not be running at this time. Please seek shelter immediately and avoid be near trees or bodies of water as they attract lighting.');
   
   //activity box info for the sidebar on the right
   const activityBoxInformation = document.getElementById('activityBoxInformation');
@@ -86,6 +96,10 @@
     if (checkTimerCompletion()){
         //change ring colour to green to indicate completion
         document.getElementById('targetDistanceCircle').className = "circle greenBorder";
+        //change titles to green
+        document.getElementById('startRunningDurationTitle').className = "greenFont textBox rightTextAlign";
+        document.getElementById('startRunningDistanceTitle').className = "greenFont textBox centerTextAlign";
+        document.getElementById('startRunningSpeedTitle').className = "greenFont textBox leftTextAlign";
         //indicate 'well done!' to user on screen
         document.getElementById('startRunningTitle').innerHTML = "Well done!";
         document.getElementById('startRunningTitle').className = "greenFont";
@@ -123,6 +137,9 @@
         document.getElementById('targetDistance').innerHTML = document.getElementById('targetDistanceInput').value + " km";
         document.getElementById('targetSpeed').innerHTML = document.getElementById('speedDropdown').value;
         document.getElementById('targetDuration').innerHTML = durationString;
+
+        document.getElementById('runningTipsDescription').innerHTML = weatherTips.get(document.querySelector('input[name="weatherSelect"]:checked').value);
+        document.getElementById('weatherIcon').src = "./images/" + document.querySelector('input[name="weatherSelect"]:checked').value + ".png";
     }
     
   })

@@ -597,6 +597,26 @@ body{
 .purpleFont{
     color: #847CF8;
 }
+.whiteFont{
+    color: white;
+}
+.greenFont{
+    color: #5BEFC3;
+}
+.textBox{
+    width: 300px;
+    font-size: 30px;
+}
+
+.rightTextAlign{
+    text-align: right;
+}
+.centerTextAlign{
+    text-align: center;
+}
+.leftTextAlign{
+    text-align: left;
+}
 
 #timer {
     font-size: 40px;
@@ -610,7 +630,7 @@ body{
     margin-top: 50px;
 }
 
-#windImage {
+#weatherIcon {
     width: 120px;
     height: 120px;
     position: relative;
@@ -619,10 +639,9 @@ body{
 }
 
 #runningTipsDescription {
-    font-size: 20px;
-    position: relative;
-    right: 70px;
-    top: -10px;
+    font-size: 17px;
+    padding-left: 60px;
+    padding-right: 30px;
 
 }
 
