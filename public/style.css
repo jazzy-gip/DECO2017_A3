@@ -141,6 +141,12 @@ body{
     margin-left: 330px;    
 }
 
+#completionTitle {
+    font-size: 30px;
+    text-align: center;
+    
+}
+
 .trackerBoxContainer {
     width: 1200px;
     height: 420px;

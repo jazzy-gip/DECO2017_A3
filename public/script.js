@@ -114,10 +114,21 @@
     else return time;
   }
 
-  //on click event handlers
+  //button to finish session
   const finishButtonEnd = document.getElementById('finishButton');
   finishButtonEnd.addEventListener("click", function(event){
     scrollToSection(document.getElementById('introPageSection'));
+
+    //populate today's summary
+
+    const durationInfo = document.getElementById('completedDuration');
+    var durationString = formatTime(document.getElementById('hourInput').value) + ":" + formatTime(document.getElementById('minuteInput').value) + ":";
+    durationString = durationString + formatTime(document.getElementById('secondsInput').value);
+    durationInfo.innerHTML = durationString;
+
+    document.getElementById('completedDistance').innerHTML = document.getElementById('targetDistanceInput').value +"km";
+
+    document.getElementById('completedSpeed').innerHTML = document.getElementById('speedDropdown').value;
   })
 
   const startRunningButton = document.getElementById('startRunningButton');
