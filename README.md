@@ -1,25 +1,14 @@
 # DECO2017_A3
 
 Web app prototype documentation
+
 ### Context
--what the app does
 The following app created is designed to function as a tracking application that's placed within the context of fitness and excercise, where users are able to input their set goals of wanting to be able to run a certain distance, speed and time so that the app will record down their data and put them to the test through implementing a live timer. This will guide and help users track their training information for that day and help them reflect on their performances, motivating them to improve on themselves better.
 
-In order to implement single page architecture I recognise that I needed to utilise Angular or React to be able to accomplish this
-In order to implement responsive web design - bootstrap framework to make seamless experience on mobile phone and screen sizes. But for this initial prototype...
-
 ### Iterations and improvements throughout development
--development steps - talk about creating html structure + css first, then adding javascript functionality
---development was done by making iterations based on different modules of the application
-
--code refactoring - removing duplicated css by utilising classes, inline css/ javascript moved to external files to separate structure, form and function
--variable/id renaming to improve code readability
--indentation redone for improved readability
--code comments put in place for easier future expansion/ collaboration
+In regards to the development of the web appication, the inital HTML structure was created with a basic structure, utilising appropriate HTML tags to represent different sections, headings, paragraphs and div elements. Whilst creating each element of each section, styling using a separate CSS file allowed me to customise its visual features at the same time, although I'd made the mistake of implementing inline styling within the same lines as the div classes and IDs. During the development, the consideration of including responsive design was disregarded as I wasn't as efficient with the time I was given to compete this project. Flexbox was implemented to create containers to hold the content to attempt responsive design, but I've realised using Bootstrap would've been way easier with its provided layout containers. Continuous testing of HTML and CSS in a web browser ensured for a consistent visual layout with necessary adjustments made to iterate on the design. Javascript functionality was added after most of the HTML and CSS was completed to enhance the interactivity and dynamic behaviour of my web application by creating functions and logic to handle specific events and actions. The use of DOM manipulation was incorporated to interact with HTML elements, dynamically update the content/styles and ensure responses to user interactions. Testing the javascript functionality with dev tools was crucial afterwards as many bugs and errors were encountered. The iterations and refinements were based on different modules of the application. For instance, code refactoring was implemented in order to remove the duplicated css by utilising classes and inline css/javascript being moved to external files to separate the structure, form and function of the app. Another example includes, both variable/id renaming and indentations redone to improve code readability. Code comments were also put in place for an easier potential future expansion/collaboration.  
 
 ### Configuration steps to run locally
--npm install
--instruct user to go to localhost 8888 on browser to test
 
 1. It is crucial for you to install Node.js before being able to run this project
 2. Clone repository to computer.
@@ -29,7 +18,4 @@ In order to implement responsive web design - bootstrap framework to make seamle
 
 ### Recommendations for future development and expansion
 
--Use of frontend framework such as Angular or React to implement reusable components to give a Single Page Architecture. 
--Use of bootstrap framework for responsive web design, along with use of viewport meta tag in html. An application like this would be best suited to mobile device dimensions, however, this prototype was developed through a desktop sized viewport.
--Input validation should be implemented clientside, with user feedback given if inappropriate input is entered in
--implementation of javascript cookies to let data persist between sessions and refreshes
+This project has a lot of improvements that need to be made in order to be easier to use and further develop to be a high quality web application. First of all, I've realised that the use of frontend framework such as Angular or React are more effective than my current framework as it implements reusable components to give a Single Page Architecture. They will provide a more structured and efficient way to develop this web application as it promotes more code reusability, scalability and maintenance, making it easier to develop, test and debug various parts of the app. The use of boostrap framework could also help improve this app for responsive web design, along with the use of viewport meta tags in HTML. An application like this would be best suited to mobile device dimensions, however, this prototype was developed through a desktop sized viewport. The bootstrap framework would ensure a seamless experience across mobile phone and screen sizes by providing fluid containers that would automatically adjust their width when the screens change. Unfortunately, I've struggled with the implementing the position: relative and margin elements within most of my CSS, realising the mistake of using px rather than percentages (%) to control the layout of elements on the page. This method caused the content to be static as the overall layout would display was visually unappealing and messy once the user zooms in/out or adjust the size of their browser to be smaller. Bootstrap would be a more effective framework as it would include a variety of utility classes that could be applied to the HTML elements to control their visibility, positioning and styling. Input validation should also be implemented clientside for future improvement, with user feedback given if inappropriate input is entered in. This will contribute to better user experience by guiding users to correct their input mistakes, reducing frustraiton and improving the overall usability of the application. Lasty, I'm acknowledging that the implementation of javascript cookies would be useful to let data persist between sessions and refreshes. This was disregarded due to my inability to organise my time properly in completing this project within the given timeframe. 
