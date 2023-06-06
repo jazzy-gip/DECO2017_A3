@@ -129,6 +129,7 @@
     document.getElementById('completedDistance').innerHTML = document.getElementById('targetDistanceInput').value +"km";
 
     document.getElementById('completedSpeed').innerHTML = document.getElementById('speedDropdown').value;
+    document.getElementById('completionTitle').hidden = false;
   })
 
   const startRunningButton = document.getElementById('startRunningButton');
