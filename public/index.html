@@ -12,18 +12,18 @@
 </head>
 <body>
     <section id="landingPageSection"> 
-    <div id = "landingPage">
-        <img id="logo" src="images/logo.png">
-       <div id = "landingPageTitleContainer">
-        <p id="landingPageTitle">Welcome runners!</p>
-       </div>
-       <p id = "landingPageDescription">Join our community of dedicated runners and take your enduring 
-        <br> training to the next level, we’ll guide you every step of the way!</p>
-    <button id = "getStarted" class = "startButton">Get started!</button> 
-    </div>
-</section>
+        <div id = "landingPage">
+            <img id="logo" src="images/logo.png">
+            <div id = "landingPageTitleContainer">
+                <p id="landingPageTitle">Welcome runners!</p>
+            </div>
+            <p id = "landingPageDescription">Join our community of dedicated runners and take your enduring 
+            <br> training to the next level, we’ll guide you every step of the way!</p>
+            <button id = "getStarted" class = "startButton">Get started!</button> 
+        </div>
+    </section>
 
-    <section id="introPageSection">
+<section id="introPageSection">
     <div id = "introPage">
         <p id = "introPageHelloText">Hello there!</p>
         <p id = "introPageProgressText">Today's progress</p>
@@ -34,141 +34,131 @@
 
         <div class="trackerBoxContainer">
             <div style="
-                margin-top: 30px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                position: relative;
-                top: 150px;">
-                <div style="
-                width: 300px;
-                font-size: 30px;
-                text-align: right;
-                color: white;" >
-                Duration</div>
-                <div style="
-                width: 300px;
-                font-size: 30px;
-                text-align: center;
-                color: white;
-                ">Distance</div>
-                <div style="
-                width: 300px;
-                font-size: 30px;
-                text-align: left;
-                color: white;
-                ">Speed </div>
-                </div> 
-                <div style="
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                position: relative;
-                top: 160px;">
-                <div style="
-                width: 300px;
-                font-size: 30px;
-                text-align: right;
-                color: white;" >
-                00:00:00</div>
-                <div style="
-                width: 300px;
-                font-size: 30px;
-                text-align: center;
-                color: white;
-                ">0 km</div>
-                <div style="
-                width: 300px;
-                font-size: 30px;
-                text-align: left;
-                color: white;
-                ">0 km/hr</div>
-                </div>
-                <div class="trackerDistanceCircle"></div>
-            </div>
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            top: 150px;"><div style="
+            width: 300px;
+            font-size: 30px;
+            text-align: right;
+            color: white;" >
+            Duration</div><div style="
+            width: 300px;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            ">Distance</div><div style="
+            width: 300px;
+            font-size: 30px;
+            text-align: left;
+            color: white;
+            ">Speed </div></div> 
+            <div style="
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            position: relative;
+            top: 160px;"><div style="
+            width: 300px;
+            font-size: 30px;
+            text-align: right;
+            color: white;" >
+            00:00:00</div><div style="
+            width: 300px;
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            ">0 km</div><div style="
+            width: 300px;
+            font-size: 30px;
+            text-align: left;
+            color: white;
+            ">0 km/hr</div></div>
+            <div class="trackerDistanceCircle"></div>
         </div>
         <button id="setRunningGoal" class="goalButton"> + Set a running goal</button>
     </div>
 </section>
 <section id = "settingGoalPageSection">
     <div id="settingGoalPage">
-        <div id ="settingGoalPageContainer" style="
-        justify-content: space-between;">
-        <div id ="mainContent">
-        <p id = "goalPageTitle">Setting your goal</p> 
-        <p id = "goalPageDescription">Fill in the required fields to modify your run before 
-            starting your journey!</p> 
-            <div id="settingGoalPageBox">
-                <div>
-                <img id="runningModeImage" src="images/runningman.png">
-                <p id="runningModeTitle">Running mode</p>
-                <select id="runningModeDropdown">
-                    <option value="Long run">Long run</option>
-                    <option value="Short run">Short run</option>
-                    <option value="Until failure">Until failure</option>
-                 </select>
-                </div>
-                <div>
-                    <img id="targetDistanceImage" src="images/distanceicon.png">
-                    <p id="targetDistanceTitle">Target Distance</p>
-                    <input id="targetDistanceInput" value="0" type="number" placeholder="0">
-                    <span id="targetDistanceUnit">km</span>
-                </div>
-                <div>
-                    <img id="timeImage" src="images/clock.png">
-                    <p id="targetDurationTitle">Duration</p>
-                    <div id="timeInput">
-                    <input id= "hourInput" value= "00" placeholder="00" type='number' min='0' max='23'>
-                    <label for="timeInput">H</label>
-                    <input id= "minuteInput" value= "00" placeholder="00" type='number' min='0' max='59'>
-                    <label for="minuteInput">M</label>
-                    <input id= "secondsInput" value= "00" placeholder="00" type='number' min='0' max='59'>
-                    <label for="secondsInput">S</label>
+        <div id ="settingGoalPageContainer" style="justify-content: space-between;">
+            <div id ="mainContent">
+                <p id = "goalPageTitle">Setting your goal</p> 
+                <p id = "goalPageDescription">Fill in the required fields to modify your run before 
+                starting your journey!</p> 
+                <div id="settingGoalPageBox">
+                    <div>
+                        <img id="runningModeImage" src="images/runningman.png">
+                        <p id="runningModeTitle">Running mode</p>
+                        <select id="runningModeDropdown">
+                            <option value="Long run">Long run</option>
+                            <option value="Short run">Short run</option>
+                            <option value="Until failure">Until failure</option>
+                        </select>
                     </div>
-                </div>
-                <div>
-                    <img id="targetSpeedImage" src="images/speed.png">
-                    <p id="targetSpeedTitle">Target Speed</p> 
-                    <select id="speedDropdown">
-                        <option value="0 km/hr">0 km/hr</option>
-                        <option value="4 km/hr">4 km/hr</option>
-                        <option value="6 km/hr">6 km/hr</option>
-                        <option value="8 km/hr">8 km/hr</option>
-                        <option value="10 km/hr">10 km/hr</option>
-                        <option value="12 km/hr">12 km/hr</option>
-                        <option value="14 km/hr">14 km/hr</option>
-                        <option value="16 km/hr">16 km/hr</option>
-                        <option value="18 km/hr">18 km/hr</option>
-                        <option value="20 km/hr">20 km/hr</option>
-                        <option value="22 km/hr">22 km/hr</option>
-                     </select>
-                </div>
-                <div>
-                    <img id="weatherImage" src="images/weather.png">
-                    <p id="weatherTitle">Weather<br>conditions</p>
-                    <div id="checkboxGrid">
-                        <div id="checkboxGroup">
+                    <div>
+                        <img id="targetDistanceImage" src="images/distanceicon.png">
+                        <p id="targetDistanceTitle">Target Distance</p>
+                        <input id="targetDistanceInput" value="0" type="number" placeholder="0">
+                        <span id="targetDistanceUnit">km</span>
+                    </div>
+                    <div>
+                        <img id="timeImage" src="images/clock.png">
+                        <p id="targetDurationTitle">Duration</p>
+                        <div id="timeInput">
+                            <input id= "hourInput" value= "00" placeholder="00" type='number' min='0' max='23'>
+                            <label for="timeInput">H</label>
+                            <input id= "minuteInput" value= "00" placeholder="00" type='number' min='0' max='59'>
+                            <label for="minuteInput">M</label>
+                            <input id= "secondsInput" value= "00" placeholder="00" type='number' min='0' max='59'>
+                            <label for="secondsInput">S</label>
+                        </div>
+                    </div>
+                    <div>
+                        <img id="targetSpeedImage" src="images/speed.png">
+                        <p id="targetSpeedTitle">Target Speed</p> 
+                        <select id="speedDropdown">
+                         <option value="0 km/hr">0 km/hr</option>
+                         <option value="4 km/hr">4 km/hr</option>
+                         <option value="6 km/hr">6 km/hr</option>
+                         <option value="8 km/hr">8 km/hr</option>
+                         <option value="10 km/hr">10 km/hr</option>
+                         <option value="12 km/hr">12 km/hr</option>
+                         <option value="14 km/hr">14 km/hr</option>
+                         <option value="16 km/hr">16 km/hr</option>
+                         <option value="18 km/hr">18 km/hr</option>
+                         <option value="20 km/hr">20 km/hr</option>
+                         <option value="22 km/hr">22 km/hr</option>
+                        </select>
+                    </div>
+                    <div>
+                     <img id="weatherImage" src="images/weather.png">
+                     <p id="weatherTitle">Weather<br>conditions</p>
+                     <div id="checkboxGrid">
+                         <div id="checkboxGroup">
                             <label><input checked value="Sunny" name="weatherSelect" type="radio">Sunny</label>
                             <label><input value="Partly cloudy" name="weatherSelect" type="radio">Partly cloudy</label>
                             <label><input value="Overcast" name="weatherSelect" type="radio">Overcast</label>
                             <label><input value="Humid" name="weatherSelect" type="radio">Humid</label>
-                        </div>
-                        <div id="checkboxGroup">
+                         </div>
+                         <div id="checkboxGroup">
                             <label><input value="Windy" name="weatherSelect" type="radio">Windy</label>
                             <label><input value="Rainy" name="weatherSelect" type="radio">Rainy</label>
                             <label><input value="Chilly" name="weatherSelect" type="radio">Chilly</label>
                             <label><input value="Stormy" name="weatherSelect" type="radio">Stormy</label>
-                        </div>
+                         </div>
+                     </div>
                     </div>
                 </div>
             </div>
-        </div>
        
-        <div id="sidebar">
-            <p id="todaysActivityText">Today's activity</p>
-            <p id="activityText">Check your previous set goals to compare <br>
+            <div id="sidebar">
+                <p id="todaysActivityText">Today's activity</p>
+                <p id="activityText">Check your previous set goals to compare <br>
                 your performance and see your improvements</p>
-            <div id="activityBox">
+             <div id="activityBox">
                 <p id="activityBoxText" >No activity today</p>
                 <div id="activityBoxInformation" hidden = true>
                     <div id="dateBox">
@@ -189,22 +179,22 @@
                         </button>
                     </div>
                 </div>
-            </div>
+             </div>
             
+            </div>
         </div>
-        
     </div>
-    
-    <div>
-        <button id="submitGoalButton">Submit set goal</button>
-        <button id="startRunning" onclick="startTimer()">Start running!</button>
-    </div>
+        <div>
+            <button id="submitGoalButton">Submit set goal</button>
+            <button id="startRunning" onclick="startTimer()">Start running!</button>
+        </div>
 </section>
+
 <section id="startRunningPageSection">
     <div id="startRunningPage">
         <p id="startRunningTitle">Start Running!</p>
         <div id="timer">00:00:00</div>
-        <div class="trackerBoxContainer">
+         <div class="trackerBoxContainer">
             <div style="
                 margin-top: 50px;
                 display: flex;
@@ -255,59 +245,57 @@
                 text-align: left;
                 color: white;
                 ">0 km/hr</div>
-                </div>
-                <div class="targetDistanceCircle2"></div>
             </div>
+                <div class="targetDistanceCircle2"></div>
+         </div>
             <div id="weatherAndThoughtsBoxes" style="
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 margin-top: 35px;">
                <div style="
-               width: 550px;
-               height: 350px;
-               background-color: #847CF8;
-                font-size: 30px;
-                text-align: center;
-                position: relative;
-                left: 120px;
-                border-radius: 30px;
-                color: white;" > 
-                <p id="runningTipsTitle">Running tips for today</p>
-                <div id="runningTipsTextContainer" style ="display: flex;
-                flex-direction: row;
-                justify-content: space-between;">
-                <img id="windImage" src="images/wind.png">
-                    <p id="runningTipsDescription">Maintain a strong running <br>form of a straight back and<br>
+                    width: 550px;
+                    height: 350px;
+                    background-color: #847CF8;
+                    font-size: 30px;
+                    text-align: center;
+                    position: relative;
+                    left: 120px;
+                    border-radius: 30px;
+                    color: white;" > 
+                    <p id="runningTipsTitle">Running tips for today</p>
+                    <div id="runningTipsTextContainer" style ="display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;">
+                        <img id="windImage" src="images/wind.png">
+                        <p id="runningTipsDescription">Maintain a strong running <br>form of a straight back and<br>
                          avoid hunching or leaning <br>forward against strong winds<br> whilst running</p>
+                    </div>
                 </div>
-            </div>
                 <div style="
-                width: 550px;
-                background-color: #847CF8;
-                font-size: 30px;
-                text-align: center;
-                position: relative;
-                right: 120px;
-                border-radius: 30px;
-                color: white;">
-                <p id="userFeedbackTitle">Any thoughts?</p>
-                <textarea id="userFeedbackBox" rows="4" cols="50" placeholder="Type here..."></textarea>
-                <div id="feedbackRating">
-                    <input type="radio" id="star1" name="rating" value="1" />
-                    <label for="star1"></label>
-                    <input type="radio" id="star2" name="rating" value="2" />
-                    <label for="star2"></label>
-                    <input type="radio" id="star3" name="rating" value="3" />
-                    <label for="star3"></label>
-                    <input type="radio" id="star4" name="rating" value="4" />
-                    <label for="star4"></label>
-                    <input type="radio" id="star5" name="rating" value="5" />
-                    <label for="star5"></label>
-                </div> 
-                  
-            </div>
-
+                    width: 550px;
+                    background-color: #847CF8;
+                    font-size: 30px;
+                    text-align: center;
+                    position: relative;
+                    right: 120px;
+                    border-radius: 30px;
+                    color: white;">
+                    <p id="userFeedbackTitle">Any thoughts?</p>
+                    <textarea id="userFeedbackBox" rows="4" cols="50" placeholder="Type here..."></textarea>
+                    <div id="feedbackRating">
+                     <input type="radio" id="star1" name="rating" value="1" />
+                     <label for="star1"></label>
+                     <input type="radio" id="star2" name="rating" value="2" />
+                     <label for="star2"></label>
+                     <input type="radio" id="star3" name="rating" value="3" />
+                     <label for="star3"></label>
+                     <input type="radio" id="star4" name="rating" value="4" />
+                     <label for="star4"></label>
+                     <input type="radio" id="star5" name="rating" value="5" />
+                     <label for="star5"></label>
+                    </div>   
+                </div>
             </div>
             <div>
                 <button class="finishButton">Finish</button>

@@ -44,6 +44,7 @@
     document.getElementById('weatherInfo').innerHTML = document.querySelector('input[name="weatherSelect"]:checked').value;
   })
 
+  //Timer element//
   var timerElement = document.getElementById("timer");
   var seconds = 0;
   var minutes = 0;
@@ -67,11 +68,13 @@
 
     timerElement.textContent = formatTime(hours) + ":" + formatTime(minutes) + ":" + formatTime(seconds);
   }
-
+  //pads 0 in front of h/m/s if it is single digit, returns padded input if time is single digit or original input
   function formatTime(time) {
-    return time < 10 ? "0" + time : time;
+    if (time < 10) return "0" + time;
+    else return time;
   }
 
+  //Scrolling buttons
   const startRunningButton = document.getElementById('startRunning');
   startRunningButton.addEventListener("click", function(event){
     scrollToSection(document.getElementById('startRunningPageSection'))

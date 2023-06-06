@@ -538,7 +538,7 @@ body{
     transition: 0.3s;
 }
 
-#startGoalButton:hover {
+#startRunning:hover {
     width: 270px;
     height: 60px;
     font-size: 19px;
@@ -547,7 +547,7 @@ body{
     left: 760px;
 }
 
-#startGoalButton:active {
+#startRunning:active {
     width: 270px;
     height: 60px;
     font-size: 19px;
