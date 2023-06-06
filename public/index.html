@@ -33,52 +33,15 @@
         <img id="introPageCalendar" src="images/calendar.png">
         <p id="completionTitle" class="purpleFont" hidden = true>RUN COMPLETED!</p>
         <div class="trackerBoxContainer">
-            <div style="margin-top: 30px;display: flex;flex-direction: row;
-            justify-content: space-between;
-            position: relative;
-            top: 150px;">
-            <div style="
-            width: 300px;
-            font-size: 30px;
-            text-align: right;
-            color: white;" >
-            Duration</div>
-            <div style="
-            width: 300px;
-            font-size: 30px;
-            text-align: center;
-            color: white;
-            ">Distance</div>
-            <div style="
-            width: 300px;
-            font-size: 30px;
-            text-align: left;
-            color: white;
-            ">Speed </div></div> 
-            <div style="
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            position: relative;
-            top: 160px;">
-            <div id="completedDuration"style="
-            width: 300px;
-            font-size: 30px;
-            text-align: right;
-            color: white;" >
-            00:00:00</div>
-            <div id="completedDistance"style="
-            width: 300px;
-            font-size: 30px;
-            text-align: center;
-            color: white;
-            ">0 km</div>
-            <div id="completedSpeed"style="
-            width: 300px;
-            font-size: 30px;
-            text-align: left;
-            color: white;
-            ">0 km/hr</div></div>
+            <div id="trackerBoxTitles">
+            <div id="durationTitle" class="trackerCustom rightTextAlign">Duration</div>
+            <div id="distanceTitle" class="trackerCustom centerTextAlign">Distance</div>
+            <div id="speedTitle" class="trackerCustom leftTextAlign">Speed </div>
+        </div> 
+            <div id="trackerBoxSelectors">
+            <div id="completedDuration" class="trackerCustom rightTextAlign">00:00:00</div>
+            <div id="completedDistance"class="trackerCustom centerTextAlign">0 km</div>
+            <div id="completedSpeed"class="trackerCustom leftTextAlign">0 km/hr</div></div>
             <div class="circle whiteBorder" id="trackerCircle" ></div>
         </div>
         <button id="setRunningGoal" class="goalButton"> + Set a running goal</button>
@@ -167,13 +130,13 @@
                     <div id="dateBox">
                         <p id="dateBoxInformation">Todays date</p>
                     </div>
-                    <div id="runningModeAndTimeInfo" style="display: flex; flex-direction: row; justify-content: space-between; position: relative; top: 40px;left: 20px;">
-                        <div id= "runningModeInfo" style=" width: 150px; font-size: 20px; text-align: left; color:black;">Running mode</div>
-                        <div id= "durationInfo" style=" width: 150px; font-size: 20px; color:black;">Duration</div>
+                    <div id="runningModeAndTimeInfo">
+                        <div id= "runningModeInfo" class="leftTextAlign blackFont">Running mode</div>
+                        <div id= "durationInfo">Duration</div>
                     </div>
-                    <div id="speedAndDistanceInfo" style="display: flex; flex-direction: row; justify-content: space-between; position: relative; top: 60px; left: 20px;">
-                        <div id="distanceInfo" style=" width: 150px; font-size: 20px; text-align: left; color:black;">Distance</div>
-                        <div id="speedInfo" style=" width: 150px; font-size: 20px; color:black;">Speed</div>
+                    <div id="speedAndDistanceInfo">
+                        <div id="distanceInfo" class="leftTextAlign blackFont">Distance</div>
+                        <div id="speedInfo" class="leftTextAlign blackFont">Speed</div>
                     </div>
                     <div id="weatherInfo">Weather</div>
                     <div id="completedText" >
@@ -198,7 +161,7 @@
         <p id="startRunningTitle" class="purpleFont">Start Running!</p>
         <div id="timer">00:00:00</div>
          <div class="trackerBoxContainer">
-            <div style=" margin-top: 50px; display: flex; flex-direction: row; justify-content: space-between; position: relative; top: 150px;">
+            <div class="containerLayout" style=" margin-top: 50px; position: relative; top: 150px;">
                 <div id="startRunningDurationTitle" class="whiteFont textBox rightTextAlign" >Duration</div>
                 <div id="startRunningDistanceTitle"class="whiteFont textBox centerTextAlign">Target <br>Distance</div>
                 <div id="startRunningSpeedTitle" class="whiteFont textBox leftTextAlign">Speed </div></div> 
@@ -209,15 +172,15 @@
             </div>
                 <div class="circle whiteBorder" id="targetDistanceCircle"></div>
          </div>
-            <div id="weatherAndThoughtsBoxes" style="display: flex;flex-direction: row;justify-content: space-between;margin-top: 35px;">
-               <div style="width: 550px;height: 350px;background-color: #847CF8;font-size: 30px;text-align: center;position: relative;left: 120px;border-radius: 30px;color: white;" > 
+            <div id="weatherAndThoughtsBoxes" class="containerLayout">
+               <div id="weatherBox1" class="weatherBoxLayout" > 
                     <p id="runningTipsTitle">Running tips for today</p>
-                    <div id="runningTipsTextContainer" style ="display: flex;flex-direction: row;justify-content: space-between;">
+                    <div id="runningTipsTextContainer" class="containerLayout">
                         <img id="weatherIcon">
                         <p id="runningTipsDescription"></p>
                     </div>
                 </div>
-                <div style="width: 550px;background-color: #847CF8;font-size: 30px;text-align: center;position: relative;right: 120px;border-radius: 30px;color: white;">
+                <div id="weatherBox2" class="weatherBoxLayout">
                     <p id="userFeedbackTitle">Any thoughts?</p>
                     <textarea id="userFeedbackBox" rows="4" cols="50" placeholder="Type here..."></textarea>
                     <div id="feedbackRating">

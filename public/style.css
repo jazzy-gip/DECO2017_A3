@@ -144,7 +144,7 @@ body{
 #completionTitle {
     font-size: 30px;
     text-align: center;
-    
+
 }
 
 .trackerBoxContainer {
@@ -155,6 +155,30 @@ body{
     margin-top: 20px;
     border-radius: 40px;
 }
+
+#trackerBoxTitles {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 150px
+}
+
+.trackerCustom {
+    width: 300px;
+    font-size: 30px;
+    color: white;
+}
+
+#trackerBoxSelectors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 160px;
+}
+
 .circle{
     width: 300px;
     height: 300px;
@@ -177,6 +201,36 @@ body{
 }
 #targetDistanceCircle {
     top: -95px;
+}
+
+.containerLayout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#weatherAndThoughtsBoxes {
+    margin-top: 35px
+}
+
+.weatherBoxLayout {
+    width: 550px;
+    height: 350px;
+    background-color: #847CF8;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 30px;
+    color: white;
+}
+
+#weatherBox1{
+    position: relative;
+    left: 120px;
+}
+
+#weatherBox2 {
+    position: relative;
+    right: 120px;
 }
 
 .goalButton {
@@ -471,6 +525,48 @@ body{
     position: relative;
     top: 15px;
     left: 15px;
+}
+
+#runningModeAndTimeInfo {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    position: relative; 
+    top: 40px;
+    left: 20px;
+}
+
+#runningModeInfo {
+    width: 150px; 
+    font-size: 20px; 
+}
+
+#durationInfo {
+    width: 150px; 
+    font-size: 20px; 
+}
+
+.blackFont {
+    color: black;
+}
+
+#speedAndDistanceInfo {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    position: relative; 
+    top: 60px; 
+    left: 20px;
+}
+
+#distanceInfo {
+    width: 150px; 
+    font-size: 20px; 
+}
+
+#speedInfo {
+    width: 150px; 
+    font-size: 20px; 
 }
 
 #weatherInfo {
