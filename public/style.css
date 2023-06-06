@@ -467,12 +467,13 @@ body{
 #deleteIcon {
     width: 60px;
     height: 60px;
-    margin-right: 50px;
-    margin-top: -5px;
     display: inline-block;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  position: relative;
+  left: 330px;
+  top: 120px;
 
 }
 
@@ -582,6 +583,14 @@ body{
     color: #847CF8;
     text-align: center;
     margin-top: 200px;
+}
+
+#timer {
+    font-size: 40px;
+    font-weight: bold;
+    color: #847CF8;
+    text-align: center;
+
 }
 
 .targetDistanceCircle2 {

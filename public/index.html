@@ -184,7 +184,7 @@
                     </div>
                     <div id="weatherInfo">Weather</div>
                     <div id="completedText" >
-                        <button id="deleteIcon" style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 120px; margin-left: 20px;">
+                        <button id="deleteIcon">
                             <img id="deleteImageIcon" src=images/bin.png>
                         </button>
                     </div>
@@ -197,11 +197,12 @@
     
     <div>
         <button id="submitGoalButton">Submit set goal</button>
-        <button id="startGoalButton">Start running!</button>
+        <button id="startGoalButton" onclick="startTimer()">Start running!</button>
     </div>
 </section>
     <div id="startRunningPage">
         <p id="startRunningTitle">Start Running!</p>
+        <div id="timer">00:00:00</div>
         <div class="trackerBoxContainer">
             <div style="
                 margin-top: 50px;
